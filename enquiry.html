@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Enquiry | HealthFirst</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header><div class="nav-flex"><h1>HealthFirst Pharmacy</h1><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="enquiry.html" class="active">Enquiry</a><a href="contact.html">Contact</a></nav></div></header>
+<main class="container" style="max-width:700px"><h2>Prescription Refill Enquiry</h2>
+<div id="formError" class="form-error"></div><div id="formResponse" class="form-response"></div>
+<form id="enquiryForm" onsubmit="return validateForm(event)">
+<label>Full Name</label><input type="text" id="name" required>
+<label>Email</label><input type="email" id="email" required>
+<label>Medicine / Service</label><select id="service"><option>Panado 500mg</option><option>Chronic Medication</option><option>Baby Care</option><option>Wellness Check</option></select>
+<label>Message</label><textarea id="message" rows="4" required></textarea>
+<button type="submit" class="btn">Submit Enquiry</button></form></main>
+<footer><p>&copy; 2025 HealthFirst Pharmacy</p></footer><script src="js/script.js"></script></body></html>
